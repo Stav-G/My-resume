@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+:root {
+    --primary-color:  #ce88ce;
+    --hover-color:  #cca2cc;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+html.dark-mode {
+    background-color: #000;
+}
+button:focus {
+    outline: 1px solid #777!important;
+}
+.lead {
+    font-weight: 400;  
+}
+
+.parallax{
+    background-image: url('https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.leadInfo{
+ margin:0 4px;
+}
+
+.bg-danger {
+    background-color: var(--primary-color)!important;
+}
+.Header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Montserrat, sans-serif;
+}
+.Header h1 {
+    color: #000;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.Header p {
+    margin-top: 125px;
+}
+.particle {
+    position: absolute!;
+    margin: 0!important;
+    margin-top: -100vh!important;
+}
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+.skills {
+    padding: 3%}
+.progress-block {
+    padding: 10px 0;
+}
+.progress-block h2 {
+    font-size: x-large;
+}
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    -moz-filter: invert(1) hue-rotate(180deg);
+}
+.inverse-dark {
+    filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    -moz-filter: invert(1) hue-rotate(180deg);
+}
+.effect2 {
+    position: relative;
+    width: 70%;
+    background: #fff;
+    padding: 5%;
+    margin: 10% auto;
+    border-bottom: solid 1px #777!important;
+    border-top: solid 1px #777!important;
+}
+
+.Photo {
+    background-color: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Photo.inverse-dark {
+    background-color: #000;
+}
+.about-text {
+    width: 100%;
+    margin-bottom: 4px;
+}
+.About-title h1 {
+    margin-top: 3%;
+    color: var(--primary-color);
+}
+
+.About-title-box {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: solid 2pxvar (--primary-color);
+}
+
+.red-line{
+    font-size: 1.6rem;
+}
+
+.skill__square {
+    display: inline;
+    margin: 15px 0!important;
+}
+.skill__square i {
+    font-size: 50px!important;
+    color: #777!important;
+    height: 20px;
+}
+.skill__square h6 {
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    padding-top: 5px;
+}
+.skill__square i:hover {
+    color: #ff4753!important;
+}
+
+.pp-text {
+    font-size: 1.5rem;
+}
+.parallax {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ @media (max-width:800px) {
+        .parallax {
+            height: 130vh;
+    }
+}
+.git-form {
+    width: 1160px;
+    box-sizing: border-box;
+    display: block;
+    margin: 3rem 3rem 0 3rem;
+    background-color: #fff;
+    max-height: 100vh;
+}
+.git-head-div {
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 15px;
+    width: 30%;
+    border-bottom: 3px solid #000;
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+}
+.git-cont {
+    display: inline-block;
+}
+.half {
+    display: inline-block;
+    vertical-align: top;
+}
+.half form input, textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #777;
+}
+.half form textarea {
+    padding-bottom: 45px;
+}
+.half form input:focus, textarea:focus {
+    border-radius: 5px;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+.half form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    box-shadow: none;
+    outline: 0;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.half form button:hover {
+    background-color: var(--hover-color);
+}
+.half form {
+    padding: 3rem 1rem;
+}
+.half p {
+    padding: 3rem 1rem 0 1rem;
+    text-align: center;
+}
+.inline-button {
+    display: inline;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+}
+.git-cont .fab {
+    vertical-align: bottom;
+    padding: 10px;
+    font-size: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .5;
+}
+.git-cont .fab:hover {
+    color: var(--hover-color);
+}
+.git-cont .fas {
+    vertical-align: bottom;
+    font-size: 40px;
+    height: 30px;
+    margin: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition: .5;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    box-shadow: 0 8px 6px -6px #646464;
+}
+.nav-link {
+    color: #000!important;
+}
+.is-current {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: var(--primary-color);
+}
+.Copy {
+    color: #fff!important;
+    font-weight: 500;
+    padding-top: 2%}
+.project-name {
+    text-decoration: none;
+}
+.gtp {
+    position: fixed;
+    left: 92%;
+    height: 150px;
+    top: 82%;
+    z-index: 1002;
+    cursor: pointer;
+}
+.see {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: #000;
+    outline: #000;
+    position: absolute;
+    padding: 5px 15px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+    left: 44%;
+    top: 90%}
+.fa-file {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 7px;
+}
+.see:active {
+    outline: 0;
+}
+.see:hover {
+    background-color: var(--hover-color);
+}
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 20px;
+    right:20px;
+    }
+.Header p {
+    margin-top: 40px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked+.slider {
+    background-color: #000;
+}
+input:focus+.slider {
+    box-shadow: 0 0 1px #000;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%}
+.line-1 {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 140%;
+    text-align: center;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.line-1 p{
+   margin: 0 auto 2px 0;
+}
+
+
+.animatePic{
+    -webkit-animation: sdb04 3s infinite;
+    animation: sdb04 3s infinite;
+    box-sizing: border-box;
+  }
+  @keyframes sdb04 {
+    0% {
+      transform: translate(0, 0);
+    }
+    40% {
+      transform: translate(0, -50px);
+    }
+    80% {
+      transform: translate(0, 0);
+    }
+
+  }
+  @-webkit-keyframes sdb04 {
+    0% {
+      -webkit-transform: translate(0, 0);
+    }
+    40% {
+      -webkit-transform: translate(0, -50px);
+    }
+    80% {
+      -webkit-transform: translate(0, 0);
+    }
+  }
+
+@media (max-width:1300px) {
+    .line-1 {
+    width: 80%
+}}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--primary-color);
+}
+::selection {
+    color: #fff;
+    background: var(--primary-color);
+}
+@media (max-width:1300px) {
+    .effect2 {
+    width: 100%}
+}@media (max-width:800px) {
+    .lead {
+    font-weight: 300;
+    padding-top: 0.5rem !important;
+}
+
+.line-1 {
+    font-size: 80%;
+    top: 5.5%}
+.underline {
+    text-decoration-color: (0, 0, 0, .1);
+}
+.red-line::before {
+    bottom: 590px;
+}
+.effect2 {
+    width: 100%}
+.skills {
+    padding: 10% 5%}
+
+.git-form {
+    width: 90%;
+    padding: 5px;
+    padding-bottom: 35px;
+    position: relative;
+    bottom: 100px;
+}
+.git-head-div {
+    width: 75%}
+
+.half form input, textarea {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.gtp {
+    left: 80%;
+    top: 87%;
+    height: 75px;
+}
+.Copy {
+    display: none;
+}
+.see {
+    left: 18%;
+    font-size: 1rem;
+}
+.fa-file {
+    font-size: 20px;
+}
+.half form button {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
