@@ -27,8 +27,8 @@ const Header = () => {
                 <span className="slider round"></span>
             </label>
             <p data-aos="fade-up" data-aos-duration="3000" className="line-1 ">
-            <p>Highly motivated, fast learning, solving problems, and hard-working student in my final year of Computer Science degree. Passionate for data and code with proven tech skills and organizational. 
-I'm Looking for my first challenge in the tech industry.</p>
+              <p>Highly motivated and skilled Software Developer with a passion for data and code,
+             dedicated to delivering high-quality work, and confident in my ability to make valuable contributions to any project or team..</p>
            
             </p>
           

@@ -15,35 +15,48 @@ const background = {
 
 const section2Exp = "Experience";
 const section2Edu = "Education";
+const section2Proj = "Projects";
 const section2Vol = "Volunteering";
 const section2Skill = "Skills and Programming knowledge";
 
 const prevJobs =[
 {
   id: 1,
-  workPlace: "Sales Support Specialist  | Cellcom | 2020 - Present",
+     workPlace: "Software Developer  | Sapiens | 2022 - Present",
   paragraph:[
-     "-Provide customer support and resolve any service performance tickets.",
-     "-Work with customers, employees, and management to promote, drive, and maintain continuous improvement in processes and productivity.",
+     "-Design, development, and implementation of new modules and processes of insurance and pension systems using SAPIENS in-house data-driven platform, eMerge, and Java.",
+     "-Writing high-level SQL queries, data manipulation, reporting, and analyzing using DB2/Oracle.",
      "-Ability to prioritize and multi-task within a fast-paced environment and great attention to detail.",
-     "-Develop organizational skills, excellent attention to detail, with an ability to work well under pressure."
+     "-Designing UI for the insurance and pension systems and implementing the logic behind using eMerge and JavaScript.",
+     "-Collaborating with QA and product teams, providing new solutions and unit tests.",
+     "-Technologies: JavaScript, Java, API, Eclipse, Oracle, DB2."
     ]
 },
 {
   id: 2,
-  workPlace: "Sales  | Cellcom | 2018 - 2020",
+    workPlace: "Sales Support Backend  | Cellcom | 2020 - 2022",
   paragraph:
     [
-      "-Selling products and services using solid arguments to prospective customers.",
-      "-Responsible increase sales and recruiting new customers for the organization.",
-      "-Maintaining positive business relationships to ensure future sales.",
+      "-Provide customer support and resolve any service performance tickets.",
+      "-Work with customers, employees, and management to promote, drive, and maintain continuous improvement in processes and productivity.",
+      "-Ability to prioritize and multi-task within a fast-paced environment and great attention to detail.",
       "-Performing cost-benefit analyses of existing and potential customers.",
-      "-Adherence to a monthly goals plan.",
-      "-Worked under pressure and independently with a demonstrated ability to multi-task."
+      "-Develop organizational skills, and excellent attention to detail, with an ability to work well under pressure."
     ],
-},
+    },
 {
   id: 3,
+  workPlace: "Sales | Cellcom | 2018 - 2020",
+  paragraph:
+      [
+          "-Selling products and services using solid arguments to prospective customers.",
+          "-Responsible for increasing sales and recruiting new customers for the organization.",
+          "-Maintaining positive business relationships to ensure future sales.",
+          "-Worked under pressure and independently with a demonstrated ability to multi-task."
+      ],
+},
+{
+  id: 4,
   workPlace: "Operation Officer | Air Force, IDF | 2014 - 2015",
   paragraph:
     [
@@ -53,12 +66,12 @@ const prevJobs =[
     ],
 },
 {
-  id: 4,
+  id: 5,
   workPlace: "Network System Operator | Air Force, IDF | 2013 - 2014",
   paragraph:
     [
       "-Establishment and deployment of tactical and technological communication cells.",
-      "-Responsible for radio communication systems, satellite systems, classified and encrypted information systems in the air force."
+      "-Responsible for radio communication systems, satellite systems, and classified and encrypted information systems in the air force."
     ],
 }
 ];
@@ -66,20 +79,22 @@ const prevJobs =[
 const education =[
   {
     id: 1,
-    place: "B.Sc. Computer Science | HIT, Institute of Technology | 2019 - Present",
-    details:[ "null."]
-  },
-  {
-    id: 2,
-    place: "Hebrew Law studies in Netanya Academic College | 2011 - 2013",
-    details: ["-Major."]
-  },
-  {
-    id: 3,
-    place: "Moshe Sharet High-School, Netanya | 2001 - 2013",
-    details: ["-Major in Biolog"]
+    place: "B.Sc. Computer Science | HIT, Institute of Technology | 2019 - 2023 | GPA - 86",
+    details:[""]
   }
 ];
+  const  projects = [
+      {
+          id: 1,
+          place: "Rain Prediction ",
+          details: ["Data Science project based on Python to predict rain in Estes Park Colorado. I used web crawling, EDA, and modeling in this project."]
+      },
+      {
+          id: 2,
+          place: "Virtual housewares store",
+          details: ["Software engineering project based on Java to sell and buy second-hand houseware furniture. It's an eCommerce local app that is based on the MVC model and uses SQL to build the database."]
+      }
+  ];
   const volunteering =[
   {
     id: 1,
@@ -91,13 +106,13 @@ const education =[
     {
       id: 1,
       area: "Code",
-      details:[ "C, C++, Python, Java, JS, CSS, HTML, API, SQL."]
+          details: [ "C, C++, C#, Python, Java, JS, CSS, HTML, API, SQL, React, NodeJS."]
     },
     {
       id: 2,
       area: "Tools",
       details:
-        ["GitHub , Office, SAP, VS code, Visual Studio, Jupyter, IntelliJ IDEA, Google Colaboratory, Postman."],
+          ["Office, SAP, VS Code, Visual Studio, Jupyter, IntelliJ IDEA, Eclipse, Oracle, DB2, MongoDB, Google Colaboratory, Postman, GitHub."],
     }
   ];
 
@@ -168,6 +183,8 @@ export {
   section2Exp,
   section2Edu,
   education,
+  section2Proj,
+  projects,
   section2Vol,
   volunteering,
   section2Skill,

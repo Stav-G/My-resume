@@ -1,6 +1,6 @@
 import React from 'react'
 import Skills from '../layouts/Skills'
-import { prevJobs, skillsBar, section2Exp, section2Edu, education, section2Vol,volunteering, section2Skill, skills } from '../../profile'
+import { prevJobs, skillsBar, section2Exp, section2Edu, education, section2Proj,projects, section2Vol, volunteering, section2Skill, skills } from '../../profile'
 
 function createSkill(skillId) {
     return (
@@ -55,6 +55,27 @@ function About(){
             ))}            
             </div>
             </div>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="row">
+                    <div className="row">
+                        <div className="col-12  d-md-block About-title">
+                            <h1>{section2Proj}</h1>
+                        </div>
+                        {projects.map(ProjectsItem => (
+                            <div className="col-12   about">
+                                <div className="About-title-box">
+                                    <h1 id="About" className="red-line">{ProjectsItem.name}</h1>
+                                </div>
+                                {ProjectsItem.details.map(singleDetail => (
+                                    <p className="lead about-text">
+                                        {singleDetail}
+                                    </p>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            
 
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="row">
             <div className="row">
